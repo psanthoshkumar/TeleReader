@@ -27,7 +27,7 @@ After Starting the application, we can wait until having the message in the list
 Once Channel admin posts message in that channel, I am able to read message from CLI without opening Telegram app.
 
 ###### Here is the Screenshot of posted message in channel:
-![screenshot of group](docs/screenshot_Msg1.png)
+![screenshot of group](./docs/screenshot_Msg1.png)
 
 ###### Example CLI ouptut:
 
