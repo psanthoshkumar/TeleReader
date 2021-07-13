@@ -1,0 +1,160 @@
+## regular message pattern:
+NewMessage.Event(
+        original_update=UpdateNewChannelMessage(
+                message=Message(
+                        id=24,
+                        peer_id=PeerChannel(
+                                channel_id=xxxxxxx
+                        ),
+                        date=datetime.datetime(2021, 7, 12, 22, 36, 10, tzinfo=datetime.timezone.utc),
+                        message='hiiiiii',
+                        out=False,
+                        mentioned=False,
+                        media_unread=False,
+                        silent=False,
+                        post=True,
+                        from_scheduled=False,
+                        legacy=False,
+                        edit_hide=False,
+                        pinned=False,
+                        from_id=None,
+                        fwd_from=None,
+                        via_bot_id=None,
+                        reply_to=None,
+                        media=None,
+                        reply_markup=None,
+                        entities=[
+                        ],
+                        views=1,
+                        forwards=0,
+                        replies=None,
+                        edit_date=None,
+                        post_author=None,
+                        grouped_id=None,
+                        restriction_reason=[
+                        ],
+                        ttl_period=None
+                ),
+                pts=25,
+                pts_count=1
+        ),
+        pattern_match=None,
+        message=Message(
+                id=24,
+                peer_id=PeerChannel(
+                        channel_id=xxxxxxxxxx
+                ),
+                date=datetime.datetime(2021, 7, 12, 22, 36, 10, tzinfo=datetime.timezone.utc),
+                message='hiiiiii',
+                out=False,
+                mentioned=False,
+                media_unread=False,
+                silent=False,
+                post=True,
+                from_scheduled=False,
+                legacy=False,
+                edit_hide=False,
+                pinned=False,
+                from_id=None,
+                fwd_from=None,
+                via_bot_id=None,
+                reply_to=None,
+                media=None,
+                reply_markup=None,
+                entities=[
+                ],
+                views=1,
+                forwards=0,
+                replies=None,
+                edit_date=None,
+                post_author=None,
+                grouped_id=None,
+                restriction_reason=[
+                ],
+                ttl_period=None
+        )
+)
+
+
+Media message pattern:
+
+NewMessage.Event(
+	original_update=UpdateNewChannelMessage(
+		message=Message(
+			id=16,
+			peer_id=PeerChannel(channel_id=xxxxxxxxx),
+			date=datetime.datetime(2021, 7, 12, 21, 57, 16, tzinfo=datetime.timezone.utc),
+			message='',
+			out=False,
+			mentioned=False,
+			media_unread=False,
+			silent=False,
+			post=True,
+			from_scheduled=False,
+			legacy=False,
+			edit_hide=False,
+			pinned=False,
+			from_id=None,
+			fwd_from=None,
+			via_bot_id=None,
+			reply_to=None,
+			media=MessageMediaPhoto(
+				photo=Photo(
+					id=5143567175318087918,
+					access_hash=5575860527246877649, file_reference=b'\x02\\\xcfN\xf8\x00\x00\x00\x10`\xec\xba\xbc^\x9c\xf9\rR\xc0\xbd\xb2H\x17MST\xf4\xaa\xf9',
+					date=datetime.datetime(2021, 7, 12, 21, 38, 8, tzinfo=datetime.timezone.utc),
+					sizes=[PhotoStrippedSize(type='i', bytes=b"\x01\x17(q\x90\xb1\xf9\xceM&\xee\xd5\x18\xcbR\x7f:\xc8\t\x1b9\xe3\x14\xd2rM'zR\xb8\xc7=h\x00\xe9\x82\x0f\xd6\x8aa\xa2\x80\x149\x1d)(\xa2\x80\x1cF\xde(<\xd1E\x00 8\xceh\xa2\x8a\x00"), PhotoSize(type='m', w=320, h=180, size=17761), PhotoSize(type='x', w=800, h=450, size=139371), PhotoSizeProgressive(type='y', w=1280, h=720, sizes=[9113, 27841, 66113, 126529, 228832])],
+					dc_id=1,
+					has_stickers=False,
+					video_sizes=[]),
+					ttl_seconds=None
+					),
+					reply_markup=None,
+					entities=[],
+					views=1,
+					forwards=0,
+					replies=None,
+					edit_date=None,
+					post_author=None,
+					grouped_id=None,
+					restriction_reason=[],
+					ttl_period=None),
+					pts=17,
+					pts_count=1
+				),
+				pattern_match=None,
+				message=Message(
+					id=16,
+					peer_id=PeerChannel(channel_id=xxxxxxxx),
+					date=datetime.datetime(2021, 7, 12, 21, 57, 16, tzinfo=datetime.timezone.utc),
+					message='',
+					out=False,
+					mentioned=False,
+					media_unread=False,
+					silent=False,
+					post=True,
+					from_scheduled=False,
+					legacy=False,
+					edit_hide=False,
+					pinned=False,
+					from_id=None,
+					fwd_from=None,
+					via_bot_id=None,
+					reply_to=None,
+					media=MessageMediaPhoto(photo=Photo(id=5143567175318087918,
+					access_hash=5575860527246877649, file_reference=b'\x02\\\xcfN\xf8\x00\x00\x00\x10`\xec\xba\xbc^\x9c\xf9\rR\xc0\xbd\xb2H\x17MST\xf4\xaa\xf9',
+					date=datetime.datetime(2021, 7, 12, 21, 38, 8, tzinfo=datetime.timezone.utc),
+					sizes=[PhotoStrippedSize(type='i', bytes=b"\x01\x17(q\x90\xb1\xf9\xceM&\xee\xd5\x18\xcbR\x7f:\xc8\t\x1b9\xe3\x14\xd2rM'zR\xb8\xc7=h\x00\xe9\x82\x0f\xd6\x8aa\xa2\x80\x149\x1d)(\xa2\x80\x1cF\xde(<\xd1E\x00 8\xceh\xa2\x8a\x00"), PhotoSize(type='m', w=320, h=180, size=17761), PhotoSize(type='x', w=800, h=450, size=139371), PhotoSizeProgressive(type='y', w=1280, h=720, sizes=[9113, 27841, 66113, 126529, 228832])], dc_id=1, has_stickers=False, video_sizes=[]),
+					ttl_seconds=None),
+					reply_markup=None,
+					entities=[],
+					views=1,
+					forwards=0,
+					replies=None,
+					edit_date=None,
+					post_author=None,
+					grouped_id=None,
+					restriction_reason=[],
+					ttl_period=None
+					)
+					)
